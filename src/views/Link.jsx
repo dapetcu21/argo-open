@@ -114,7 +114,7 @@ export var Link = React.createClass({
         props.style = Object.assign({}, props.style, props.activeStyle);
     }
 
-    return React.createElement('a', props);
+    return React.createElement('div', props);
   }
 
 });

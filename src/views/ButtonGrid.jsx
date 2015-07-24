@@ -3,9 +3,14 @@ import Component from './Component';
 import Link from './Link';
 import p from 'react-style-normalizer';
 import { buttons, styles } from './buttons';
+import _ from 'lodash';
 
 export default class ButtonGrid extends Component {
   static displayName = 'ButtonGrid';
+
+  shouldComponentUpdate(nextProps) {
+    return !_.isEqual(this.props, nextProps);
+  }
 
   render() {
     let { width, height, buttonMargin, buttonHeight } = this.props;

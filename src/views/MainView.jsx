@@ -19,6 +19,8 @@ const styles = {
   }
 };
 
+const config = [60, 10];
+
 @connect(state => ({
   screen: state.screen
 }))
@@ -28,18 +30,18 @@ export default class MainView extends Component {
   }
 
   getEndValue() {
-    return { [this.props.children ? 'subview' : 'root'] : { val: 1 } };
+    return { [this.props.children ? 'subview' : 'root'] : { val: 1, config } };
   }
 
   willEnter() {
-    return {val : 0};
+    return {val : 0, config};
   }
 
   willLeave(key, value, endValue, currentValue, currentSpeed) {
     if (currentValue[key].val === 0 && currentSpeed[key].val === 0) {
       return null;
     }
-    return {val : 0};
+    return {val : 0, config};
   }
 
   render() {
