@@ -1,0 +1,65 @@
+{
+  "name": "argo-tabs",
+  "version": "2.0.0",
+  "description": "Tabulation software for World Schools Debate competitions",
+  "main": "index.js",
+  "scripts": {
+    "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dapetcu21/argotabs"
+  },
+  "keywords": [
+    "argo",
+    "tabs",
+    "tabulation",
+    "world schools",
+    "argotabs",
+    "ws",
+    "wsdc",
+    "debate",
+    "tournament",
+    "championship",
+    "competition"
+  ],
+  "author": "Marius Petcu <dapetcu21@gmail.com>",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/dapetcu21/argotabs/issues"
+  },
+  "homepage": "https://github.com/dapetcu21/argotabs",
+  "devDependencies": {
+    "webpack-dev-server": "*"
+  },
+  "dependencies": {
+    "babel-core": "^5.4.7",
+    "babel-loader": "^5.1.3",
+    "babel-runtime": "^5.8.3",
+    "css-loader": "^0.14.4",
+    "extract-text-webpack-plugin": "^0.8.1",
+    "file-loader": "^0.8.4",
+    "html-webpack-plugin": "^1.4.0",
+    "json-loader": "^0.5.2",
+    "lodash": "^3.9.3",
+    "node-libs-browser": "^0.5.2",
+    "node-sass": "^3.1.2",
+    "node-uuid": "^1.4.3",
+    "react": "^0.13.3",
+    "react-class-helper": "^0.1.2",
+    "react-hot-loader": "^1.2.8",
+    "react-motion": "^0.2.0",
+    "react-redux": "^0.2.2",
+    "react-router": "^1.0.0-beta3",
+    "react-style-normalizer": "^1.2.8",
+    "react-tap-event-plugin": "^0.1.7",
+    "react-vendor-prefix": "0.0.1",
+    "redux": "^1.0.0-rc",
+    "redux-thunk": "^0.1.0",
+    "sass-loader": "^1.0.2",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.9.10",
+    "when": "^3.7.3"
+  }
+}
