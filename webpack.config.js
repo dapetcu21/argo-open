@@ -27,7 +27,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx', '.json'],
   },
   babel: {
-    stage: 1,
+    stage: 0,
     optional: ['runtime']
   },
   plugins: [
