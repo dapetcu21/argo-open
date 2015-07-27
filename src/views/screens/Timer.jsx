@@ -10,7 +10,9 @@ const styles = {
   }
 };
 
-export default class TimerView extends Component {
+export default class Timer extends Component {
+  static displayName = 'Timer';
+
   render() {
     return <div style={styles.container}>
       Timer

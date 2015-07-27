@@ -6,7 +6,7 @@ import { loadFromStorage } from './actions/StorageActions';
 import { screenResize } from './actions/ScreenActions';
 import store from './store';
 
-import AppView from './views/AppView';
+import App from './views/App';
 
 store.dispatch(loadFromStorage());
 
@@ -19,4 +19,4 @@ if (module.hot) {
 }
 
 React.initializeTouchEvents(true);
-React.render(<AppView/>, document.body);
+React.render(<App/>, document.body);

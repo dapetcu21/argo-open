@@ -4,7 +4,7 @@ import HoldTransitionSpring from './HoldTransitionSpring';
 import { connect } from 'react-redux';
 import p from 'react-style-normalizer';
 
-import MenuView from './MenuView';
+import Menu from './Menu';
 
 const styles = { 
   subview: {
@@ -24,7 +24,9 @@ const config = [60, 10];
 @connect(state => ({
   screen: state.screen
 }))
-export default class MainView extends Component {
+export default class Root extends Component {
+  static displayName = 'Root';
+
   holdComponent(key) {
     return this.props.children ? React.cloneElement(this.props.children, { key }) : null;
   }
@@ -64,7 +66,7 @@ export default class MainView extends Component {
                 };
                 return <div style={p({...styles.subview, ...style})}>{components[key]}</div>;
               }
-              return <MenuView branch={this.props.branch} width={width} height={height} animationValue={currentValue[key].val} key='root'/>;
+              return <Menu branch={this.props.branch} width={width} height={height} animationValue={currentValue[key].val} key='root'/>;
             })}
           </div>
         }

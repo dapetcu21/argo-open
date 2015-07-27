@@ -7,7 +7,8 @@ import store from '../store';
 import { Provider } from 'react-redux';
 import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
 
-export default class AppView extends Component {
+export default class App extends Component {
+  static displayName = 'App';
 
   render() {
     var provider = <Provider store={store}>

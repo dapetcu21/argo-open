@@ -3,6 +3,8 @@ import Component from './Component';
 import { TransitionSpring } from 'react-motion';
 
 export default class HoldTransitionSpring extends Component {
+  static displayName = 'HoldTransitionSpring';
+
   constructor() {
     super(...arguments);
 

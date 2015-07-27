@@ -45,7 +45,9 @@ const rowCount = Math.ceil(buttons.length / 2);
 
 let max = (a, b) => a > b ? a : b;
 
-export default class MenuView extends Component {
+export default class Menu extends Component {
+  static displayName = 'Menu';
+
   render() {
     let { width, height } = this.props;
 
@@ -74,6 +76,7 @@ export default class MenuView extends Component {
     styles.buttons.perspectiveOrigin = pX + ' ' + pY;
     styles.buttonsInner.transform = `translate3d(0px, 0px, ${(1 - anim) * 50}px)`;
     styles.buttonsInner.opacity = anim;
+    styles.titleBar.opacity = anim;
 
     return <div style={p(styles.menuContainer)}>
       <div style={p(styles.titleBar)}>
